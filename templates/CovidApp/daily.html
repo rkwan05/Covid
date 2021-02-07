@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daily Screening</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+</head>
+<body>
+    <!-- navbar-->
+    <div class="container" >
+        <div class="row">
+             <div class="col-3" style="background-color:lightblue; height:100%; position:fixed; top: 0%; left:0%; overflow-x: hidden;">
+                <!--heading/logo placeholder-->
+                 <div style="margin-top:5%">
+                     <a href="Covid.html">
+                         <img src="covidhub logo.png" width="100%" height="110%" style="margin-top:5%">
+
+                     </a>
+                 </div>
+
+<!--                 <a class="btn btn-primary-outline" href="homepage.html" style="font-size:200%; text-align:center; color:white; margin-top: 13%;" >Covid Spot/logo here</a>-->
+
+                <!--buttons on the left nav bar   ------ add href-->
+                <div class="d-grid gap-2" style="margin-top:17%;" >
+                    <a class="btn btn-primary-outline" href="daily.html" style="text-align:left; font-size:150%" onMouseOver="this.style.backgroundColor='lightgrey'" onMouseOut="this.style.backgroundColor='lightblue'"!important>Daily Screening</a>
+                    <a class="btn btn-primary-outline" href="trends.html" style="text-align:left; font-size:150%" onMouseOver="this.style.backgroundColor='lightgrey'" onMouseOut="this.style.backgroundColor='lightblue'"!important>Trends</a>
+                    <a class="btn btn-primary-outline" href="tips.html" style="text-align:left; font-size:150%" onMouseOver="this.style.backgroundColor='lightgrey'" onMouseOut="this.style.backgroundColor='lightblue'"!important>Tips and Tricks for Prevention</a>
+                </div>
+
+            </div>
+
+            <div class="col-9" style="left:25%; position:relative">
+                <div class="d-grid gap-3" style="margin-top:5%;" >
+                     <h1 >Covid Screen Testing</h1>
+                     <h4>Are you currently experiencing any of these symptoms?</h4>
+
+                </div>
+
+                <!-- checklist-->
+                <div class="form-check" style="margin-top:5%">
+                    <input class="form-check-input" id="check1" type="checkbox" value="">
+                    <label class="form-check-label" for="check1">Fever and/or chills</label>
+
+
+                </div>
+
+                <div class="form-check" style="margin-top:2%">
+                    <input class="form-check-input" id="check2" type="checkbox" value="">
+                    <label class="form-check-label" for="check2">Cough or Barking Cough</label>
+                </div>
+
+                <div class="form-check" style="margin-top:2%">
+                    <input class="form-check-input" id="check3" type="checkbox" value="">
+                    <label class="form-check-label" for="check3">Decrease or loss of taste or smell</label>
+                </div>
+
+                <div class="form-check" style="margin-top:2%">
+                    <input class="form-check-input" id="check4" type="checkbox" value="">
+                    <label class="form-check-label" for="check4">Sore Throat or difficulty swallowing</label>
+                </div>
+
+                <div class="form-check" style="margin-top:2%">
+                    <input class="form-check-input" id="check5" type="checkbox" value="">
+                    <label class="form-check-label" for="check5">Runny or stuffy/congested nose</label>
+                </div>
+
+                <div class="form-check" style="margin-top:2%">
+                    <input class="form-check-input" id="check6" type="checkbox" value="">
+                    <label class="form-check-label" for="check6">Headache</label>
+                </div>
+
+                <div class="form-check" style="margin-top:2%">
+                    <input class="form-check-input" id="check7" type="checkbox" value="">
+                    <label class="form-check-label" for="check7">Nausea, vomiting, and/or diarrhea</label>
+                </div>
+
+                <div class="form-check" style="margin-top:2%">
+                    <input class="form-check-input" id="check8" type="checkbox" value="">
+                    <label class="form-check-label" for="check8">Extreme tiredness or muscle aches</label>
+                </div>
+
+                <div class="form-check" style="margin-top:2%">
+                    <input class="form-check-input" id="check9" type="checkbox" value="">
+                    <label class="form-check-label" for="check9">None of them</label>
+                </div>
+
+                <a  class="btn" href="#14days" onclick="continue()" !important style="display:block; text-align:center; font-weight:bold; background-color:lightblue; !important font-size:120%; margin-top:4%">Continue</a>
+
+                <!--question2-->
+                <div id="14days" style="margin-top:9%">
+                    <h4>Have you or someone close to you travelled outside of Canada in the last 14 days?</h4>
+
+                    <div class="btn-toolbar-8" style="text-align:center; margin-top:5%">
+                        <button onclick="yes()" type="button" class="btn btn-outline-primary" style="width:20%;">Yes</button>
+                        <a href="#notification" type="button" class="btn btn-outline-primary" style="width:20%;">No</a>
+                    </div>
+
+                </div>
+
+                <div id="notification" style="margin-top:7%">
+                    <h4>In the last 14 days, have you received a COVID Alert exposure notification on your cell phone?</h4>
+
+                    <div class="btn-toolbar-8" style="text-align:center; margin-top:5%">
+                        <button onclick="yes()" type="button" class="btn btn-outline-primary" style="width:20%;">Yes</button>
+                        <a href="#doctor" type="button" class="btn btn-outline-primary" style="width:20%;">No</a>
+                    </div>
+
+                </div>
+
+                 <div id="doctor" style="margin-top:7%; height:20%;">
+                    <h4>Has a doctor, health care provider, or public health unit told you that you should currently be isolating (staying at home)?</h4>
+
+                    <div class="btn-toolbar-8" style="text-align:center; margin-top:6%">
+                        <button onclick="yes()" type="button" class="btn btn-outline-primary" style="width:20%;">Yes</button>
+                        <button onclick="done()" type="button" class="btn btn-outline-primary" style="width:20%;">No</button>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+<script>
+   function continue() {
+            var i;
+            for(i = 1; i < 10; i++) {
+                var checked = document.getElementById("check" + );
+
+
+            }
+
+            alert("hi");
+
+        }
+
+
+</script>
+
+<script>
+
+
+        function yes() {
+            alert('Please stay home and get some rest.');
+        }
+
+    </script>
+
+    <script>
+        function done(){
+            alert('You are good to go! Please continue to respect COVID regulations. Stay Safe!');
+        }
+
+    </script>
+    <script src="js/bootstrap.js"></script>
+
+</html>

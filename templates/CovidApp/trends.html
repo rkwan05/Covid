@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trends</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--icon libary-->
+    <link rel="stylesheet" href="/static/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<!-- navbar-->
+    <div class="container" >
+        <div class="row">
+             <div class="col-3" style="background-color:lightblue; height:100%; position:fixed; top: 0%; left:0%; overflow-x: hidden;">
+                <!--heading/logo placeholder-->
+                 <div style="margin-top:5%">
+                     <a href="Covid.html">
+                         <img src="covidhub logo.png" width="100%" height="110%" style="margin-top:5%">
+                     </a>
+                 </div>
+
+<!--                 <a class="btn btn-primary-outline" href="homepage.html" style="font-size:200%; text-align:center; color:white; margin-top: 13%;" >Covid Spot/logo here</a>-->
+
+                <!--buttons on the left nav bar   ------ add href-->
+                <div class="d-grid gap-2" style="margin-top:17%; " >
+                    <a class="btn btn-primary-outline" href="daily.html" style="text-align:left; font-size:150%" onMouseOver="this.style.backgroundColor='lightgrey'" onMouseOut="this.style.backgroundColor='lightblue'"!important>Daily Screening</a>
+                    <a class="btn btn-primary-outline" href="trends.html" style="text-align:left; font-size:150%; " onMouseOver="this.style.backgroundColor='lightgrey'" onMouseOut="this.style.backgroundColor='lightblue'"!important>Trends</a>
+                    <a class="btn btn-primary-outline" href="tips.html" style="text-align:left; font-size:150%; " onMouseOver="this.style.backgroundColor='lightgrey'" onMouseOut="this.style.backgroundColor='lightblue'"!important>Tips and Tricks for Prevention</a>
+                </div>
+
+            </div>
+
+            <div class="col-9" style="left:25%; position:relative">
+                <div style="margin-top:7%; ">
+                    <h1 style="font-size:300%">Trends</h1>
+                </div>
+                <!--search bar-->
+                <div class="input-group" style="margin-top:3%; margin-left:0%">
+                        <div class="form-outline">
+                            <input type="text" id="searching" placeholder="Search for your city" class="form-control" />
+                        </div>
+
+                        <button onclick="citySearch()" type="submit" class="btn btn-outline-primary">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                <img id="graphPic" src="Graphs.png" width="100%;" style="margin-top:7%; display:none;">
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="js/bootstrap.js"></script>
+    <script>
+        function citySearch() {
+            document.getElementById("graphPic").style.display = "block";
+
+        }
+
+    </script>
+
+</body>
+</html>

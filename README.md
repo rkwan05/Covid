@@ -1,1 +1,1 @@
-# Covid
+# CovidHub

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CovidSpot</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+<head>
+<meta charset="UTF-8">
+<style>
+
+ .container .btn {
+  position: absolute;
+  top: 92%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #133a70;
+  color: white;
+  font-family: Verdana;
+  font-size: 25px;
+  padding: 12px 24px;
+  border: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  font-family: Verdana;
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+
+<body style="background-image: url('CovidHomePage.png');">
+
+<div class="container">
+  <a href="daily.html" class="btn" style="vertical-align:middle"><span>Click to find out more!</span></a>
+  <script src="js/bootstrap.js"></script>
+</div>
+
+</body>
+</html>
